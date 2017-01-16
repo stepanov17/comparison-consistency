@@ -1,0 +1,14 @@
+a test app to illustrate the simple (linear optimization based)
+case of http://www.sciencedirect.com/science/article/pii/S0263224115006909
+
+Maven is required.
+
+to run, please:
+
+1. export JAVA_HOME, add $JAVA_HOME/bin and maven bin to PATH
+2. mkdir out
+3. mvn dependency:copy-dependencies
+4. mvn package
+5. $JAVA_HOME/bin/java -cp "target/consistency-app-0.1.jar:target/dependency/commons-math3-3.6.1.jar" com.vniim.consistency.ConsistencyStatsCalculator example.txt out 1000000
+(args are input file, output dir and number of simulation runs)
+
