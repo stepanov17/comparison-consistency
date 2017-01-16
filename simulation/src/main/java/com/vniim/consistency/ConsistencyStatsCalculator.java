@@ -33,16 +33,17 @@ import org.apache.commons.math3.stat.descriptive.rank.Median;
 public class ConsistencyStatsCalculator {
 
     /**
-     * minimum maximum number of trails
+     * minimum number of trials
      */
     public static final int NSIM_MIN = 100;
+
     /**
-     * maximum maximum number of trails
+     * maximum number of trials
      */
     public static final int NSIM_MAX = 100000000;
 
     /**
-     * default number of Monte Carlo simulation trails
+     * default number of Monte Carlo simulation trials
      */
     public static final int DEFAULNTSIM = 1000000;
 
@@ -92,7 +93,7 @@ public class ConsistencyStatsCalculator {
      * Constructor.
      * @param in input file name
      * @param out output dir name
-     * @param nSimulations number of simulation trails
+     * @param nSimulations number of simulation runs
      */
     public ConsistencyStatsCalculator(String in, String out, int nSimulations) {
 
@@ -147,7 +148,7 @@ public class ConsistencyStatsCalculator {
 
     /**
      * Check pair consistency of the measurement data.
-     * @return true if the data are consistent; otherwise false.
+     * @return true if the data are consistent; otherwise false
      */
     public boolean checkConsistency() {
 

@@ -23,7 +23,7 @@ function [res] = check(meas, unc)
     for i = 1 : n
         for j = (i + 1) : n
             tmp(i, j) = 0.5 * abs(meas(i) - meas(j)) / sqrt(unc(i)^2 + unc(j)^2);
-            tmp(j, i) = tmp(i, j);
+            //tmp(j, i) = tmp(i, j);
         end
     end
     res =  max(tmp);
