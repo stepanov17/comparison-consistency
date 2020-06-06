@@ -3,7 +3,9 @@ clc;
 
 // u_i -> uExt_i := k_i * u_i, k_i >= 1:
 // 1. metrological compatibility: abs(x_i - x_j) / 2 * sqrt(k_i^2 * u_i^2 + k_j^2 * u_j^2) <= 1, 1 <= i, j <= n
-// 2. sum_1^n (k_i * u_i)^2 -> min_{k_1, ..., k_n}
+// 2. chi-squared test
+// 3. sum_1^n (k_i * u_i)^2 -> min_{k_1, ..., k_n}
+
 
 // measurement data and uncertainties
 x = [0.00248, 0.00291, 0.00399, 0.00427, 0.00559, 0.00422, 0.00385, 0.00221, 0.00425, 0.00349, 0.00260, 0.00553, 0.00191, 0.00435, 0.00419, 0.00449];
